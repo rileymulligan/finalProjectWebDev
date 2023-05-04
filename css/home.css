@@ -7,34 +7,48 @@ body {
     color: black;
     }
     
-    /* Header styles */
-    header {
-    background-color: black;
-    padding: 20px;
-    }
-    
-    h1 {
-    margin: 0;
-    color: white;
-    }
-    
-    nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: right;
-    }
-    
-    nav li {
-    display: inline-block;
-    margin-left: 20px;
-    font-size: 18px;
-    }
-    
-    nav li a {
-    color: white;
-    text-decoration: none;
-    }
+/* Header styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
     
     /* Hero section styles */
 .hero {
@@ -139,24 +153,27 @@ body {
     color: #666666;
     }
     
-    /* Testimonials section styles */
-    .testimonials {
-    background-color: #990000;
-    color: white;
-    padding: 100px;
-    }
-    
-    .testimonials h2 {
-    font-size: 48px;
-    margin-top: 0;
-    }
-    
-    blockquote {
-    font-size: 24px;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    }
+    /* Countdown section styles */
+.countdown-container {
+  background-color: #ff4d4d;
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.countdown-container h2 {
+  font-size: 48px;
+  margin-top: 0;
+}
+
+.countdown-container p {
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
     
     /* Footer styles */
     footer {

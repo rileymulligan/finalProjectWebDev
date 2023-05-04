@@ -1,3 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 50px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  
+}
+
+.spacing{
+  padding: 50px;
+}
 .container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -51,8 +95,8 @@
     box-shadow: 0 4px 6px rgba(255, 0, 0, 0.4);
     border-radius: 8px;
     position: fixed;
-    top: 30%;
-    left: 60%;
+    top: 20%;
+    left: 50%;
   }
   
   .card-header {
@@ -104,6 +148,17 @@
   .card-details span {
     font-weight: bold;
   }
+
+   /* Footer styles for mobile */
+   footer {
+    padding: 10px;
+  }
+
+  footer p {
+    font-size: 16px;
+  }
+
+
   
 @media only screen and (max-width: 768px) {
 .container {
@@ -112,21 +167,19 @@
 }
 
 .card {
-    position: relative;
-    top: 0;
-    left: 0;
-    margin: auto;
-    margin-bottom: 20px;
+    position: absolute;
+    left: 1000;
 }
 
 .weapons {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-gap: 20px;
-    padding: 10%;
+    padding: 20%;
     width: 80%;
     overflow: auto;
   }
   
 }
+

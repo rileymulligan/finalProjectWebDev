@@ -1,6 +1,10 @@
 // Wait for the DOM to finish loading
 document.addEventListener('DOMContentLoaded', function() {
+    // Get the current year
+    var currentYear = new Date().getFullYear();
 
+    // Set the current year in the footer
+    document.getElementById("currentYear").innerHTML = currentYear;
     // Get a reference to the container for the weapon buttons
     var weaponsContainer = document.querySelector('.weapons');
   

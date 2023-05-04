@@ -23,6 +23,11 @@ header {
   background-color: #1a1a1a;
   color: #fff;
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
@@ -38,7 +43,7 @@ nav ul {
 }
 
 nav li {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 nav a {
@@ -49,7 +54,10 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
+  
 }
+
+
 
 /* Style the navigation buttons and dots */
 .nav-container {
@@ -234,6 +242,15 @@ nav a:hover {
 
 .clearfix {
   clear: both;
+}
+
+ /* Footer styles for mobile */
+ footer {
+  padding: 10px;
+}
+
+footer p {
+  font-size: 16px;
 }
 
 @media only screen and (max-width: 767px) {

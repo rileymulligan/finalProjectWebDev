@@ -1,3 +1,10 @@
+// Get the current year
+var currentYear = new Date().getFullYear();
+
+// Set the current year in the footer
+document.getElementById("currentYear").innerHTML = currentYear;
+
+
 let index = 0;
       const maps = [];
 

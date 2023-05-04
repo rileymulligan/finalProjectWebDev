@@ -36,6 +36,12 @@ const agentUltimateDisplayName = document.getElementById("agent-ultimate-display
 const agentUltimateDescription = document.getElementById("agent-ultimate-description");
 const agentUltimateDisplayIcon = document.getElementById("agent-ultimate-display-icon");
 
+// Get the current year
+var currentYear = new Date().getFullYear();
+
+// Set the current year in the footer
+document.getElementById("currentYear").innerHTML = currentYear;
+
 let currentIndex = 0;
 const agentsPerPage = 1;
 const apiUrl = "https://valorant-api.com/v1/agents";
